@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Analyse de la controverse sur les pesticides SDHI : faut-il interdire les fongicides inhibiteurs de la succinate déshydrogénase ? Projet ESIEE Paris."
+    />
+    <title>Les pesticides SDHI — Controverse ESIEE Paris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="has-animations">
+    <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+
+    <div class="ambient" aria-hidden="true">
+      <span class="ambient__blob ambient__blob--1"></span>
+      <span class="ambient__blob ambient__blob--2"></span>
+      <span class="ambient__blob ambient__blob--3"></span>
+    </div>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <main id="contenu-principal">
+      <!-- ========== 1. HERO ========== -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true">
+          <img
+            src="images/hero-contro.jpg"
+            alt=""
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__particles" aria-hidden="true"></div>
+        <div class="hero__content">
+          <h1
+            id="hero-title"
+            class="hero__title"
+            aria-label="Les pesticides SDHI"
+          >
+            Les pesticides <span class="text-gradient">SDHI</span>
+          </h1>
+          <p
+            class="hero__subtitle"
+            aria-label="Faut-il interdire les fongicides inhibiteurs de la succinate déshydrogénase ?"
+          >
+            Faut-il interdire les fongicides inhibiteurs de la succinate déshydrogénase&nbsp;?
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== SOMMAIRE ========== -->
+      <nav id="sommaire" class="sommaire" aria-labelledby="sommaire-title">
+        <div class="container">
+          <h2 id="sommaire-title" class="sommaire__title">Sommaire</h2>
+          <ol class="sommaire__list">
+            <li><a href="#intro" class="sommaire__link">Introduction</a></li>
+            <li><a href="#comprendre" class="sommaire__link">Comprendre les SDHI</a></li>
+            <li><a href="#pourquoi" class="sommaire__link">Pourquoi cette controverse&nbsp;?</a></li>
+            <li><a href="#acteurs" class="sommaire__link">Acteurs de la controverse</a></li>
+            <li><a href="#chronologie" class="sommaire__link">Chronologie</a></li>
+            <li><a href="#donnees" class="sommaire__link">Données et notions clés</a></li>
+            <li><a href="#arguments" class="sommaire__link">Arguments des différents camps</a></li>
+            <li><a href="#friction" class="sommaire__link">Points de friction</a></li>
+            <li><a href="#cartographie" class="sommaire__link">Cartographie</a></li>
+            <li><a href="#enquete" class="sommaire__link">Enquête et contacts</a></li>
+            <li><a href="#sources" class="sommaire__link">Sources</a></li>
+            <li><a href="#equipe" class="sommaire__link">Équipe</a></li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- ========== INTRO SOUS HERO ========== -->
+      <section id="intro" class="intro-panel section" aria-labelledby="intro-chapo">
+        <div class="container">
+          <p class="intro-panel__meta reveal reveal--fade" data-reveal>Projet Controverse · ESIEE Paris · 2026</p>
+          <p id="intro-chapo" class="intro-panel__chapo reveal reveal--up" data-reveal>
+            Les inhibiteurs de la succinate déshydrogénase (SDHI) sont utilisés massivement depuis
+            les années 2000 pour protéger les cultures contre les maladies fongiques. Pourtant,
+            ils font l’objet d’une controverse qui mobilise la santé publique, l’agronomie, la
+            régulation et la sphère politique&nbsp;: ces molécules sont-elles suffisamment sûres
+            aux doses d’exposition réelles, ou faut-il restreindre voire interdire leur usage&nbsp;?
+          </p>
+
+          <div class="intro-panel__pillars">
+            <article class="pillar reveal reveal--up tilt-card" data-reveal>
+              <span class="pillar__icon pillar__icon--health" aria-hidden="true"></span>
+              <h3>Santé publique</h3>
+              <p>
+                Craintes de neurotoxicité, de génotoxicité et d’effets sur la mitochondrie humaine,
+                alimentées par des études in vitro et des détections de résidus dans l’alimentation
+                et l’environnement.
+              </p>
+            </article>
+            <article class="pillar reveal reveal--up tilt-card" data-reveal>
+              <span class="pillar__icon pillar__icon--agri" aria-hidden="true"></span>
+              <h3>Agriculture</h3>
+              <p>
+                Enjeu de rendement et de protection des cultures&nbsp;: les SDHI représentent une
+                part importante du marché des fongicides et sont présentés comme difficiles à
+                remplacer à court terme.
+              </p>
+            </article>
+            <article class="pillar reveal reveal--up tilt-card" data-reveal>
+              <span class="pillar__icon pillar__icon--reg" aria-hidden="true"></span>
+              <h3>Régulation</h3>
+              <p>
+                Tension entre évaluations des agences (EFSA, ANSES), alertes de chercheurs et
+                demandes de moratoire fondées sur le principe de précaution.
+              </p>
+            </article>
+          </div>
+
+          <a href="#comprendre" class="btn btn--primary btn--magnetic ripple-host reveal reveal--up" data-reveal>
+            Explorer la controverse
+          </a>
+        </div>
+      </section>
+
+      <!-- ========== 2. COMPRENDRE LES SDHI ========== -->
+      <section id="comprendre" class="section" aria-labelledby="comprendre-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Fondamentaux</span>
+            <h2 id="comprendre-title">Comprendre les SDHI</h2>
+            <p class="section__intro">
+              Avant d’entrer dans le débat, il est nécessaire de clarifier le mécanisme d’action de
+              ces fongicides et la raison pour laquelle une cible aussi fondamentale que la SDH
+              interroge au-delà du règne fongique.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Qu’est-ce qu’un SDHI&nbsp;?</h3>
+              <p>
+                Les <strong>SDHI</strong> (Succinate DeHydrogenase Inhibitors) sont des
+                fongicides qui bloquent l’enzyme succinate déshydrogénase (SDH), essentielle au
+                métabolisme énergétique des champignons pathogènes. En inhibant cette enzyme, ils
+                empêchent la production d’énergie mitochondriale et stoppent le développement du
+                champignon sur la plante.
+              </p>
+            </article>
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>La succinate déshydrogénase (SDH)</h3>
+              <p>
+                La SDH est un complexe enzymatique de la chaîne respiratoire mitochondriale. Elle
+                catalyse une étape clé du cycle de Krebs et de la phosphorylation oxydative. Cette
+                cible est conservée chez de nombreux organismes eucaryotes, pas seulement chez les
+                champignons.
+              </p>
+            </article>
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Les mitochondries</h3>
+              <p>
+                Les mitochondries sont les organites producteurs d’énergie (ATP) dans les cellules
+                eucaryotes. Toute perturbation de leur fonctionnement peut avoir des conséquences
+                sur la viabilité cellulaire, la différenciation et, potentiellement, la santé des
+                organismes exposés.
+              </p>
+            </article>
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Pourquoi une cible «&nbsp;universelle&nbsp;» pose question</h3>
+              <p>
+                Si la SDH est structuralement proche entre les champignons et d’autres organismes
+                (plantes, insectes, mammifères), l’inhibition par un fongicide pourrait, en
+                théorie, affecter des voies métaboliques non ciblées. Le cœur du désaccord
+                scientifique porte sur l’ampleur de ce risque aux doses réellement rencontrées sur
+                le terrain et dans l’alimentation.
+              </p>
+            </article>
+          </div>
+
+          <aside class="glossary reveal reveal--up" data-reveal aria-labelledby="glossaire-title">
+            <h3 id="glossaire-title">Glossaire <span class="glossary__hint">— cliquez sur un terme</span></h3>
+            <dl class="glossary__list">
+              <div class="glossary__item" tabindex="0">
+                <dt>SDHI</dt>
+                <dd>
+                  Inhibiteur de la succinate déshydrogénase&nbsp;; famille de fongicides
+                  systémiques largement utilisés en agriculture.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>SDH</dt>
+                <dd>
+                  Succinate déshydrogénase&nbsp;; enzyme du complexe II mitochondrial, cible
+                  moléculaire des SDHI.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>Mitochondrie</dt>
+                <dd>
+                  Organite cellulaire responsable de la respiration et de la production d’ATP.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>Fongicide</dt>
+                <dd>
+                  Produit phytosanitaire destiné à lutter contre les champignons pathogènes des
+                  cultures.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>LMR</dt>
+                <dd>
+                  Limite maximale de résidus&nbsp;; seuil réglementaire de résidus de pesticides
+                  autorisé dans les denrées alimentaires.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>Principe de précaution</dt>
+                <dd>
+                  En l’absence de certitude scientifique absolue, possibilité de prendre des
+                  mesures de prévention face à un risque grave ou irréversible.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>Neurotoxicité</dt>
+                <dd>
+                  Capacité d’une substance à nuire au système nerveux&nbsp;; au centre des
+                  préoccupations liées aux maladies neurodégénératives.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>Génotoxicité</dt>
+                <dd>
+                  Effet d’une substance sur l’ADN, pouvant entraîner des mutations ou des
+                  dommages chromosomiques.
+                </dd>
+              </div>
+              <div class="glossary__item" tabindex="0">
+                <dt>Moratoire</dt>
+                <dd>
+                  Suspension temporaire de l’usage ou de l’homologation d’une substance, en
+                  attendant des données complémentaires.
+                </dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========== 3. POURQUOI CETTE CONTROVERSE ========== -->
+      <section id="pourquoi" class="section section--alt" aria-labelledby="pourquoi-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Enjeux</span>
+            <h2 id="pourquoi-title">Pourquoi cette controverse&nbsp;?</h2>
+          </header>
+
+          <div class="grid-2">
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Désaccord scientifique</h3>
+              <p>
+                Les études in vitro et sur modèles animaux ne convergent pas toutes vers la même
+                conclusion sur les effets des SDHI hors champignons. Les interprétations divergent
+                sur la transposabilité des résultats aux expositions humaines réelles.
+              </p>
+            </article>
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Rendement agricole vs santé publique</h3>
+              <p>
+                Les filières agricoles mettent en avant l’efficacité des SDHI contre des maladies
+                majeures (septoriose, oïdium, etc.), tandis que les alertes sanitaires questionnent
+                le rapport bénéfice-risque à l’échelle des populations.
+              </p>
+            </article>
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Méthodes d’évaluation</h3>
+              <p>
+                Le débat porte sur les protocoles toxicologiques, les modèles utilisés, la prise en
+                compte des expositions combinées («&nbsp;effet cocktail&nbsp;») et la durée des
+                études de suivi.
+              </p>
+            </article>
+            <article class="card reveal reveal--up tilt-card" data-reveal>
+              <h3>Principe de précaution</h3>
+              <p>
+                Faut-il attendre une preuve épidémiologique définitive avant d’agir, ou appliquer une
+                logique préventive face à des signaux scientifiques encore discutés&nbsp;?
+              </p>
+            </article>
+          </div>
+
+          <blockquote class="block-quote">
+            La controverse éclate publiquement en 2018 lorsque deux chercheurs du CNRS, Alexis
+            Dewailly et Pierre Rustin, alertent sur les risques potentiels des SDHI pour la santé
+            humaine et les écosystèmes. En face, l’industrie agrochimique et les agences sanitaires
+            estiment que les produits autorisés respectent les protocoles réglementaires et ne
+            présentent pas de risque avéré aux doses d’exposition réelles.
+          </blockquote>
+
+          <p class="section__intro">
+            Cette controverse révèle une tension classique entre innovation agronomique, sécurité
+            sanitaire, expertise réglementaire et principe de précaution. Le débat ne porte pas
+            seulement sur la toxicité intrinsèque des molécules, mais sur la façon dont la preuve
+            est produite, validée et traduite en décision publique.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== 4. ACTEURS ========== -->
+      <section id="acteurs" class="section" aria-labelledby="acteurs-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Cartographie sociale</span>
+            <h2 id="acteurs-title">Acteurs de la controverse</h2>
+            <p class="section__intro">
+              Industrie, agences, chercheurs, agriculteurs, associations et institutions politiques
+              n’ont ni les mêmes intérêts, ni les mêmes temporalités, ni les mêmes critères de
+              preuve.
+            </p>
+          </header>
+
+          <article class="actor-family reveal reveal--up" data-reveal>
+            <h3 class="actor-family__title">Industrie agrochimique</h3>
+            <ul class="actor-list" aria-label="Acteurs industriels">
+              <li>BASF</li>
+              <li>Bayer</li>
+              <li>Syngenta</li>
+              <li>Corteva</li>
+            </ul>
+            <div class="grid-2">
+              <div class="card">
+                <p><strong>Rôle&nbsp;:</strong> développement, commercialisation et défense des SDHI homologués.</p>
+                <p><strong>Position&nbsp;:</strong> innocuité aux doses réglementaires, conformité aux évaluations des agences.</p>
+              </div>
+              <div class="card">
+                <p class="influence"><strong>Influence&nbsp;:</strong> élevée sur la recherche appliquée et les filières de production.</p>
+                <p><strong>Liens&nbsp;:</strong> dialogue avec les régulateurs, financement de données toxicologiques, pression économique sur les filières dépendantes.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="actor-family reveal reveal--up" data-reveal>
+            <h3 class="actor-family__title">Régulateurs et agences sanitaires</h3>
+            <ul class="actor-list">
+              <li>EFSA</li>
+              <li>ANSES</li>
+              <li>Ministère de l’Agriculture</li>
+            </ul>
+            <div class="grid-2">
+              <div class="card">
+                <p><strong>Rôle&nbsp;:</strong> évaluation des risques, fixation des LMR, recommandations d’homologation ou de restriction.</p>
+                <p><strong>Position&nbsp;:</strong> maintien des usages tant que les dossiers satisfont aux critères réglementaires en vigueur.</p>
+              </div>
+              <div class="card">
+                <p class="influence"><strong>Influence&nbsp;:</strong> centrale — nœud d’arbitrage entre science, industrie et politique.</p>
+                <p><strong>Liens&nbsp;:</strong> sollicités par l’industrie, les chercheurs et les ONG&nbsp;; soumis à des débats sur l’indépendance de l’expertise.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="actor-family reveal reveal--up" data-reveal>
+            <h3 class="actor-family__title">Chercheurs et lanceurs d’alerte</h3>
+            <ul class="actor-list">
+              <li>Dewailly / Rustin / CNRS</li>
+              <li>Collectif des 237 scientifiques</li>
+              <li>INSERM</li>
+            </ul>
+            <div class="grid-2">
+              <div class="card">
+                <p><strong>Rôle&nbsp;:</strong> production de connaissances, tribunes, expertise collective.</p>
+                <p><strong>Position&nbsp;:</strong> risques potentiels sous-évalués, nécessité de précaution et de recherches complémentaires.</p>
+              </div>
+              <div class="card">
+                <p class="influence"><strong>Influence&nbsp;:</strong> forte sur l’agenda médiatique et scientifique, plus limitée sur les décisions immédiates.</p>
+                <p><strong>Liens&nbsp;:</strong> appui des ONG et associations de patients&nbsp;; tensions possibles avec l’industrie et certains régulateurs.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="actor-family reveal reveal--up" data-reveal>
+            <h3 class="actor-family__title">Organisations agricoles</h3>
+            <ul class="actor-list">
+              <li>FNSEA</li>
+              <li>Agriculteurs (ex. Beauce)</li>
+            </ul>
+            <div class="grid-2">
+              <div class="card">
+                <p><strong>Rôle&nbsp;:</strong> représentation des intérêts de production, plaidoyer pour la disponibilité des outils phytosanitaires.</p>
+                <p><strong>Position&nbsp;:</strong> maintien des SDHI tant qu’aucune alternative crédible n’est proposée.</p>
+              </div>
+              <div class="card">
+                <p class="influence"><strong>Influence&nbsp;:</strong> importante sur le débat national et le coût perçu d’un moratoire.</p>
+                <p><strong>Liens&nbsp;:</strong> proches des filières et du ministère&nbsp;; en tension avec les demandes de restriction.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="actor-family reveal reveal--up" data-reveal>
+            <h3 class="actor-family__title">ONG et associations</h3>
+            <ul class="actor-list">
+              <li>Générations Futures</li>
+              <li>Parkinson France</li>
+              <li>Pesticide Action Network</li>
+            </ul>
+            <div class="grid-2">
+              <div class="card">
+                <p><strong>Rôle&nbsp;:</strong> mobilisation citoyenne, rapports, lobbying pour la réduction des pesticides.</p>
+                <p><strong>Position&nbsp;:</strong> restriction ou interdiction, application renforcée du principe de précaution.</p>
+              </div>
+              <div class="card">
+                <p class="influence"><strong>Influence&nbsp;:</strong> croissante via la presse, les sondages et les procédures judiciaires ou politiques.</p>
+                <p><strong>Liens&nbsp;:</strong> alliances avec chercheurs et associations de malades&nbsp;; opposition à l’industrie.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="actor-family reveal reveal--up" data-reveal>
+            <h3 class="actor-family__title">Médias et institutions politiques</h3>
+            <ul class="actor-list">
+              <li>Les Verts / écologistes</li>
+              <li>Médias (Le Monde, Libération, etc.)</li>
+              <li>Consommateurs</li>
+            </ul>
+            <div class="grid-2">
+              <div class="card">
+                <p><strong>Rôle&nbsp;:</strong> mise en scène publique du débat, relais des alertes, pression politique.</p>
+                <p><strong>Position&nbsp;:</strong> variable — de la défense du statu quo réglementaire aux appels à moratoire.</p>
+              </div>
+              <div class="card">
+                <p class="influence"><strong>Influence&nbsp;:</strong> détermine la visibilité et le calendrier politique du dossier.</p>
+                <p><strong>Liens&nbsp;:</strong> interface entre opinion publique, experts et décideurs européens et nationaux.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== 5. CHRONOLOGIE ========== -->
+      <section id="chronologie" class="section section--alt" aria-labelledby="chronologie-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Historique</span>
+            <h2 id="chronologie-title">Chronologie</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">1966</div>
+              <div class="timeline__content">
+                <h3>Découverte de la SDH comme cible fongicide</h3>
+                <p>La succinate déshydrogénase est identifiée comme une cible potentielle pour le développement de fongicides.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">1969</div>
+              <div class="timeline__content">
+                <h3>Premier SDHI homologué</h3>
+                <p>La carboxine devient le premier fongicide SDHI autorisé.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">Années 2000</div>
+              <div class="timeline__content">
+                <h3>Nouvelle génération de SDHI</h3>
+                <p>Arrivée de molécules de seconde génération et adoption massive dans les grandes cultures.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2010</div>
+              <div class="timeline__content">
+                <h3>Évaluation par l’EFSA</h3>
+                <p>L’Autorité européenne de sécurité des aliments commence l’évaluation systématique des nouvelles molécules SDHI.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2013</div>
+              <div class="timeline__content">
+                <h3>Autorisations en France et en Europe</h3>
+                <p>Plusieurs SDHI de 2<sup>e</sup> génération sont autorisés sur le territoire européen.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2015</div>
+              <div class="timeline__content">
+                <h3>Premières études sur cellules humaines</h3>
+                <p>Des travaux suggèrent une inhibition possible de la SDH dans des cellules humaines exposées in vitro.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">Mars 2018</div>
+              <div class="timeline__content">
+                <h3>Tribune Dewailly et Rustin</h3>
+                <p>Les chercheurs du CNRS publient une alerte publique sur les risques potentiels des SDHI.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">Octobre 2018</div>
+              <div class="timeline__content">
+                <h3>Appel à moratoire</h3>
+                <p>Plus de 237 scientifiques signent un appel demandant la suspension des SDHI en attendant des preuves d’innocuité.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2019</div>
+              <div class="timeline__content">
+                <h3>Expertise ANSES et refus de moratoire</h3>
+                <p>L’ANSES lance une expertise collective&nbsp;; le gouvernement refuse un moratoire immédiat.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2020</div>
+              <div class="timeline__content">
+                <h3>Publications contradictoires</h3>
+                <p>De nouvelles études alimentent le débat sur les effets non ciblés, sans consensus définitif.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2021</div>
+              <div class="timeline__content">
+                <h3>Conclusions intermédiaires ANSES</h3>
+                <p>L’agence publie des éléments de synthèse sur les données disponibles [détails à compléter selon rapport final].</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2022</div>
+              <div class="timeline__content">
+                <h3>Révision des LMR</h3>
+                <p>Certaines limites maximales de résidus sont révisées au niveau européen.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2023</div>
+              <div class="timeline__content">
+                <h3>Présence dans les urines</h3>
+                <p>De nouvelles publications portent sur la détection de SDHI dans les urines de la population générale.</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal reveal--left" data-reveal>
+              <div class="timeline__year">2024</div>
+              <div class="timeline__content">
+                <h3>Retour du débat européen</h3>
+                <p>Le dossier SDHI retrouve une visibilité au niveau politique et réglementaire de l’Union européenne.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ========== 6. DONNÉES ========== -->
+      <section id="donnees" class="section" aria-labelledby="donnees-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Chiffres clés</span>
+            <h2 id="donnees-title">Données et notions clés</h2>
+          </header>
+
+          <div class="data-grid">
+            <figure class="data-stat reveal reveal--scale" data-reveal>
+              <span class="data-stat__value" data-count="25" data-prefix="~" data-suffix="%">~25&nbsp;%</span>
+              <figcaption class="data-stat__label">Part des SDHI dans le marché mondial des fongicides</figcaption>
+            </figure>
+            <figure class="data-stat">
+              <span class="data-stat__value">~3,5&nbsp;Md$</span>
+              <figcaption class="data-stat__label">Valeur estimée du marché en 2020 (USD/an)</figcaption>
+            </figure>
+            <figure class="data-stat">
+              <span class="data-stat__value">Plusieurs M ha</span>
+              <figcaption class="data-stat__label">Hectares traités en France [précision à compléter]</figcaption>
+            </figure>
+            <figure class="data-stat reveal reveal--scale" data-reveal>
+              <span class="data-stat__value" data-count="237">237</span>
+              <figcaption class="data-stat__label">Scientifiques signataires de l’alerte (2018)</figcaption>
+            </figure>
+            <figure class="data-stat">
+              <span class="data-stat__value">&gt;10</span>
+              <figcaption class="data-stat__label">Substances actives SDHI homologuées en Europe</figcaption>
+            </figure>
+            <figure class="data-stat reveal reveal--scale" data-reveal>
+              <span class="data-stat__value" data-count="15" data-suffix="%">15&nbsp;%</span>
+              <figcaption class="data-stat__label">Fruits et légumes analysés en France avec résidus détectés</figcaption>
+            </figure>
+            <figure class="data-stat reveal reveal--scale" data-reveal>
+              <span class="data-stat__value" data-count="50" data-prefix="+" data-suffix="%">+50&nbsp;%</span>
+              <figcaption class="data-stat__label">Augmentation des cas de Parkinson en France (2000–2020) — à contextualiser</figcaption>
+            </figure>
+            <figure class="data-stat">
+              <span class="data-stat__value">500&nbsp;M€/an</span>
+              <figcaption class="data-stat__label">Coût estimé d’un moratoire pour l’agriculture française (FNSEA)</figcaption>
+            </figure>
+          </div>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <caption class="visually-hidden">Synthèse des indicateurs clés de la controverse SDHI</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Indicateur</th>
+                  <th scope="col">Valeur</th>
+                  <th scope="col">Contexte</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Part de marché mondiale</td>
+                  <td>~25&nbsp;% des fongicides</td>
+                  <td>Position commerciale majeure des SDHI</td>
+                </tr>
+                <tr>
+                  <td>Chiffre d’affaires</td>
+                  <td>~3,5&nbsp;milliards USD/an (2020)</td>
+                  <td>Enjeu économique pour l’industrie</td>
+                </tr>
+                <tr>
+                  <td>Alerte scientifique</td>
+                  <td>237 signataires</td>
+                  <td>Octobre 2018 — appel au moratoire</td>
+                </tr>
+                <tr>
+                  <td>Résidus alimentaires</td>
+                  <td>15&nbsp;% des échantillons</td>
+                  <td>Surveillance française [programme à préciser]</td>
+                </tr>
+                <tr>
+                  <td>Coût agricole d’un moratoire</td>
+                  <td>500&nbsp;M€/an</td>
+                  <td>Estimation FNSEA — contestée par d’autres acteurs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <aside class="callout callout--caution">
+            <h3>Prudence d’interprétation</h3>
+            <p>
+              Ces chiffres circulent dans un espace conflictuel&nbsp;: leurs sources, méthodes et
+              cadres temporels sont débattus. Une statistique avancée par un camp peut être
+              contestée par un autre sur le plan méthodologique ou politique. Les données
+              épidémiologiques (Parkinson, expositions) ne permettent pas, à elles seules, d’établir
+              un lien de causalité direct avec les SDHI sans analyse approfondie.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========== 7. ARGUMENTS ========== -->
+      <section id="arguments" class="section section--alt" aria-labelledby="arguments-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Analyse</span>
+            <h2 id="arguments-title">Arguments des différents camps</h2>
+            <p class="section__intro">
+              Chaque argument structure une partie du débat. Cliquez pour afficher le porteur, le
+              contre-argument et l’enjeu sous-jacent.
+            </p>
+          </header>
+
+          <div class="filter-bar reveal" data-reveal role="tablist" aria-label="Filtrer les arguments">
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Tous</button>
+            <button type="button" class="filter-btn" data-filter="pro" role="tab" aria-selected="false">Maintien</button>
+            <button type="button" class="filter-btn" data-filter="anti" role="tab" aria-selected="false">Restriction</button>
+          </div>
+
+          <div class="accordion" id="arg-1" data-camp="pro">
+            <button type="button" class="accordion__trigger" aria-controls="arg-1-panel">
+              <span>1. Innocuité aux doses d’exposition réelles</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div id="arg-1-panel" class="accordion__panel" role="region">
+              <dl class="argument-meta">
+                <dt>Formulation</dt>
+                <dd>Les SDHI homologués sont sûrs car les expositions humaines restent très inférieures aux doses sans effet observé dans les études réglementaires.</dd>
+                <dt>Porté par</dt>
+                <dd>Industrie agrochimique, EFSA, ANSES (position majoritaire des dossiers validés).</dd>
+                <dt>Contre-argument</dt>
+                <dd>Les études réglementaires ne reproduisent pas toujours les expositions chroniques, combinées et les populations vulnérables.</dd>
+                <dt>Enjeu</dt>
+                <dd>Choix des modèles toxicologiques et des marges de sécurité appliquées.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion" id="arg-2" data-camp="anti">
+            <button type="button" class="accordion__trigger" aria-controls="arg-2-panel">
+              <span>2. La SDH est une cible universelle</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div id="arg-2-panel" class="accordion__panel" role="region">
+              <dl class="argument-meta">
+                <dt>Formulation</dt>
+                <dd>Le risque ne se limite pas aux champignons&nbsp;: l’inhibition mitochondriale pourrait affecter d’autres organismes, dont l’homme.</dd>
+                <dt>Porté par</dt>
+                <dd>Dewailly, Rustin, collectif des 237 scientifiques, INSERM (travaux connexes).</dd>
+                <dt>Contre-argument</dt>
+                <dd>La sélectivité moléculaire et les marges d’exposition réelle réduiraient ce risque à des niveaux négligeables.</dd>
+                <dt>Enjeu</dt>
+                <dd>Transposition des résultats in vitro / animaux à l’exposition humaine réelle.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion" id="arg-3" data-camp="pro">
+            <button type="button" class="accordion__trigger" aria-controls="arg-3-panel">
+              <span>3. Indispensables à la productivité agricole</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div id="arg-3-panel" class="accordion__panel" role="region">
+              <dl class="argument-meta">
+                <dt>Formulation</dt>
+                <dd>Les SDHI sont essentiels pour protéger les rendements, notamment en grandes cultures (blé, vignes, etc.).</dd>
+                <dt>Porté par</dt>
+                <dd>FNSEA, filières céréalières, industrie.</dd>
+                <dt>Contre-argument</dt>
+                <dd>Des alternatives existent ou sont en développement (agroécologie, variétés résistantes, autres modes d’action) — leur déploiement demande du temps et des investissements.</dd>
+                <dt>Enjeu</dt>
+                <dd>Arbitrage entre sécurité alimentaire de production et sécurité sanitaire à long terme.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion" id="arg-4" data-camp="pro">
+            <button type="button" class="accordion__trigger" aria-controls="arg-4-panel">
+              <span>4. Évaluation réglementaire rigoureuse</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div id="arg-4-panel" class="accordion__panel" role="region">
+              <dl class="argument-meta">
+                <dt>Formulation</dt>
+                <dd>Les agences ont déjà examiné ces substances selon des protocoles harmonisés et exigeants avant toute autorisation.</dd>
+                <dt>Porté par</dt>
+                <dd>EFSA, ANSES, ministères compétents.</dd>
+                <dt>Contre-argument</dt>
+                <dd>Questions sur les conflits d’intérêts, les données fournies par l’industrie et l’absence d’études sur les effets cocktail.</dd>
+                <dt>Enjeu</dt>
+                <dd>Indépendance et exhaustivité de l’expertise réglementaire.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion" id="arg-5" data-camp="anti">
+            <button type="button" class="accordion__trigger" aria-controls="arg-5-panel">
+              <span>5. Devoir moral d’alerter</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div id="arg-5-panel" class="accordion__panel" role="region">
+              <dl class="argument-meta">
+                <dt>Formulation</dt>
+                <dd>Face à des signaux sérieux, les chercheurs ont le devoir d’alerter avant qu’une preuve épidémiologique définitive ne soit disponible.</dd>
+                <dt>Porté par</dt>
+                <dd>Lanceurs d’alerte, ONG, associations de patients.</dd>
+                <dt>Contre-argument</dt>
+                <dd>Une alerte prématurée peut provoquer une anxiété injustifiée et des décisions économiques disproportionnées.</dd>
+                <dt>Enjeu</dt>
+                <dd>Temporalité scientifique vs urgence perçue par la société civile.</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="accordion" id="arg-6" data-camp="anti">
+            <button type="button" class="accordion__trigger" aria-controls="arg-6-panel">
+              <span>6. Menace pour la biodiversité</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div id="arg-6-panel" class="accordion__panel" role="region">
+              <dl class="argument-meta">
+                <dt>Formulation</dt>
+                <dd>Les SDHI peuvent affecter des organismes non cibles (insectes, oiseaux, microbiote du sol) et contribuer au déclin de la biodiversité.</dd>
+                <dt>Porté par</dt>
+                <dd>ONG environnementales, écologistes, certains écologues.</dd>
+                <dt>Contre-argument</dt>
+                <dd>Les études écotoxicologiques des dossiers d’homologation intègrent déjà ces dimensions — à réévaluer selon les données récentes.</dd>
+                <dt>Enjeu</dt>
+                <dd>Évaluation des risques écosystémiques et des expositions environnementales.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 8. FRICTION ========== -->
+      <section id="friction" class="section" aria-labelledby="friction-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Oppositions</span>
+            <h2 id="friction-title">Points de friction</h2>
+          </header>
+
+          <div class="friction-columns">
+            <div class="friction-col reveal reveal--left tilt-card" data-reveal>
+              <h3>Position favorable au maintien des SDHI</h3>
+              <ul>
+                <li>Efficacité agronomique démontrée sur des maladies majeures</li>
+                <li>Faibles doses d’exposition humaine par rapport aux seuils réglementaires</li>
+                <li>Validation par les agences sanitaires européennes et nationales</li>
+                <li>Absence de preuve épidémiologique définitive d’un effet causal</li>
+                <li>Manque d’alternatives satisfaisantes à court terme pour les agriculteurs</li>
+              </ul>
+            </div>
+            <div class="friction-col reveal reveal--right tilt-card" data-reveal>
+              <h3>Position favorable à l’interdiction ou au moratoire</h3>
+              <ul>
+                <li>Universalité de la cible SDH et risque d’effets off-target</li>
+                <li>Insuffisance présumée des protocoles actuels (cocktail, chronique)</li>
+                <li>Expositions combinées à plusieurs pesticides non modélisées</li>
+                <li>Conflits d’intérêts possibles dans la chaîne d’expertise</li>
+                <li>Principe de précaution face à des risques potentiellement irréversibles</li>
+                <li>Risques sanitaires et écologiques soulevés par des études récentes</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Nœuds de la controverse</h3>
+          <div class="nodes-grid">
+            <div class="node-item reveal reveal--scale tilt-card" data-reveal>
+              <strong>Preuve d’absence vs absence de preuve</strong>
+              Faut-il interpréter le silence des études comme une garantie de sécurité&nbsp;?
+            </div>
+            <div class="node-item reveal reveal--scale tilt-card" data-reveal>
+              <strong>Indépendance de l’expertise</strong>
+              Qui produit les données&nbsp;? Qui les interprète&nbsp;? Avec quels financements&nbsp;?
+            </div>
+            <div class="node-item reveal reveal--scale tilt-card" data-reveal>
+              <strong>Santé vs rendement</strong>
+              Quel poids pour la santé publique dans les décisions agricoles et économiques&nbsp;?
+            </div>
+            <div class="node-item reveal reveal--scale tilt-card" data-reveal>
+              <strong>Temporalités divergentes</strong>
+              La science avance lentement&nbsp;; la politique et l’opinion exigent des réponses rapides.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 9. CARTOGRAPHIE ========== -->
+      <section id="cartographie" class="section section--alt" aria-labelledby="cartographie-title">
+        <div class="container map-section">
+          <header class="section__header">
+            <span class="section-label">Relations</span>
+            <h2 id="cartographie-title">Cartographie de la controverse</h2>
+            <p class="section__intro">
+              Schéma simplifié des relations d’influence, de soutien et d’opposition. Les
+              régulateurs occupent une position centrale d’arbitrage.
+            </p>
+          </header>
+
+          <figure class="map-figure">
+            <svg
+              class="controversy-map"
+              viewBox="0 0 720 480"
+              role="img"
+              aria-labelledby="map-title map-desc"
+            >
+              <title id="map-title">Cartographie des acteurs de la controverse SDHI</title>
+              <desc id="map-desc">
+                Schéma montrant les régulateurs au centre, reliés à l'industrie, aux chercheurs,
+                agriculteurs, ONG, associations de malades, médias, citoyens et institutions politiques.
+              </desc>
+
+              <!-- Liens -->
+              <line x1="360" y1="240" x2="140" y2="100" stroke="#6b6b68" stroke-width="1.5" stroke-dasharray="4 3" />
+              <line x1="360" y1="240" x2="580" y2="100" stroke="#6b6b68" stroke-width="1.5" />
+              <line x1="360" y1="240" x2="120" y2="280" stroke="#1a4a47" stroke-width="2" />
+              <line x1="360" y1="240" x2="600" y2="280" stroke="#6b6b68" stroke-width="1.5" stroke-dasharray="4 3" />
+              <line x1="360" y1="240" x2="200" y2="400" stroke="#6b6b68" stroke-width="1.5" />
+              <line x1="360" y1="240" x2="520" y2="400" stroke="#1a4a47" stroke-width="2" />
+              <line x1="360" y1="240" x2="360" y2="80" stroke="#6b6b68" stroke-width="1.5" />
+              <line x1="360" y1="240" x2="360" y2="420" stroke="#6b6b68" stroke-width="1.5" stroke-dasharray="4 3" />
+              <line x1="140" y1="100" x2="580" y2="100" stroke="#d4d2cc" stroke-width="1" />
+              <line x1="120" y1="280" x2="600" y2="280" stroke="#d4d2cc" stroke-width="1" stroke-dasharray="4 3" />
+
+              <!-- Nœud central -->
+              <circle class="map-node map-node--central" cx="360" cy="240" r="52" fill="#4281a4" data-label="Régulateurs (EFSA · ANSES)" />
+              <text x="360" y="235" text-anchor="middle" fill="#fff" font-size="11" font-family="system-ui,sans-serif">Régulateurs</text>
+              <text x="360" y="250" text-anchor="middle" fill="#fff" font-size="10" font-family="system-ui,sans-serif">EFSA · ANSES</text>
+
+              <!-- Autres nœuds -->
+              <rect class="map-node" x="70" y="70" width="140" height="44" rx="4" fill="#fff" stroke="#d4b483" data-label="Industrie agrochimique" />
+              <text x="140" y="97" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Industrie agrochimique</text>
+
+              <rect class="map-node" x="510" y="70" width="140" height="44" rx="4" fill="#fff" stroke="#48a9a6" data-label="Chercheurs indépendants" />
+              <text x="580" y="97" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Chercheurs indép.</text>
+
+              <rect x="40" y="258" width="160" height="44" rx="4" fill="#fff" stroke="#d4d2cc" />
+              <text x="120" y="285" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Agriculteurs</text>
+
+              <rect x="520" y="258" width="160" height="44" rx="4" fill="#fff" stroke="#d4d2cc" />
+              <text x="600" y="285" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">ONG</text>
+
+              <rect x="280" y="48" width="160" height="40" rx="4" fill="#fff" stroke="#d4d2cc" />
+              <text x="360" y="73" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Institutions politiques</text>
+
+              <rect x="130" y="378" width="140" height="44" rx="4" fill="#fff" stroke="#d4d2cc" />
+              <text x="200" y="405" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Ass. malades</text>
+
+              <rect x="450" y="378" width="140" height="44" rx="4" fill="#fff" stroke="#d4d2cc" />
+              <text x="520" y="405" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Médias</text>
+
+              <rect x="290" y="408" width="140" height="40" rx="4" fill="#fff" stroke="#d4d2cc" />
+              <text x="360" y="433" text-anchor="middle" fill="#1e1e1e" font-size="11" font-family="system-ui,sans-serif">Citoyens</text>
+            </svg>
+            <figcaption class="map-legend">
+              <span class="legend-item"><span class="legend-line"></span> Influence / expertise</span>
+              <span class="legend-item"><span class="legend-line legend-line--dashed"></span> Opposition / tension</span>
+              <span class="legend-item"><span class="legend-dot"></span> Nœud central (régulateurs)</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 10. ENQUÊTE ========== -->
+      <section id="enquete" class="section" aria-labelledby="enquete-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Terrain</span>
+            <h2 id="enquete-title">Enquête et contacts</h2>
+            <p class="section__intro">
+              Ce site valorise le travail d’enquête mené par le groupe&nbsp;: entretiens,
+              sollicitations d’acteurs et recoupement de sources.
+            </p>
+          </header>
+
+          <h3>Contacts établis ou tentés</h3>
+          <ul class="contact-list">
+            <li>
+              <h4>Chercheur CNRS (anonymisé)</h4>
+              <p>
+                <strong>Réponse obtenue.</strong> Témoignage sur les pressions institutionnelles
+                exercées après la tribune de 2018 et sur les difficultés à faire reconnaître des
+                signaux précoces dans l’évaluation réglementaire.
+              </p>
+            </li>
+            <li>
+              <h4>Générations Futures</h4>
+              <p>
+                <strong>Échange réalisé.</strong> Envoi d’un rapport de synthèse et invitation à un
+                webinaire sur les pesticides et la santé environnementale.
+              </p>
+            </li>
+            <li>
+              <h4>FNSEA</h4>
+              <p>
+                <strong>Refus de commentaire officiel.</strong> Aucune prise de position détaillée
+                sur les SDHI dans le cadre de cette enquête.
+              </p>
+            </li>
+            <li>
+              <h4>Agriculteur céréalier (Beauce)</h4>
+              <p>
+                <strong>Témoignage recueilli.</strong> Dépendance aux SDHI pour la protection du
+                blé, inquiétudes croissantes face aux débats publics et incertitude sur les
+                alternatives disponibles à court terme.
+              </p>
+            </li>
+          </ul>
+
+          <h3>Sondage Générations Futures (2023)</h3>
+          <p>Indicateurs d’opinion sur les pesticides et l’agriculture&nbsp;:</p>
+          <div class="survey-stats">
+            <div class="survey-stat reveal reveal--up" data-reveal>
+              <div class="survey-stat__bar"><span class="survey-stat__fill" data-percent="81.8"></span></div>
+              <div class="survey-stat__pct" data-count="81.8" data-suffix="%">81,8&nbsp;%</div>
+              <p>Préoccupés par l’impact environnemental des pesticides</p>
+            </div>
+            <div class="survey-stat reveal reveal--up" data-reveal>
+              <div class="survey-stat__bar"><span class="survey-stat__fill" data-percent="77.7"></span></div>
+              <div class="survey-stat__pct" data-count="77.7" data-suffix="%">77,7&nbsp;%</div>
+              <p>Estiment que l’usage des pesticides nuit à l’environnement</p>
+            </div>
+            <div class="survey-stat reveal reveal--up" data-reveal>
+              <div class="survey-stat__bar"><span class="survey-stat__fill" data-percent="82.5"></span></div>
+              <div class="survey-stat__pct" data-count="82.5" data-suffix="%">82,5&nbsp;%</div>
+              <p>En France — nuisances environnementales des pesticides</p>
+            </div>
+            <div class="survey-stat reveal reveal--up" data-reveal>
+              <div class="survey-stat__bar"><span class="survey-stat__fill" data-percent="59"></span></div>
+              <div class="survey-stat__pct" data-count="59" data-suffix="%">59&nbsp;%</div>
+              <p>Pensent que les agriculteurs devraient privilégier les méthodes les moins risquées sous peine de perdre certains soutiens</p>
+            </div>
+          </div>
+          <p class="section__intro">
+            <small>Source du sondage&nbsp;: Générations Futures, 2023 — [lien et méthodologie à compléter].</small>
+          </p>
+
+          <aside class="callout">
+            <h3>Limites méthodologiques</h3>
+            <ul>
+              <li>Accès inégal aux acteurs (industrie et certains régulateurs peu disponibles)</li>
+              <li>Réponses partielles ou orientées par l’intérêt de l’interlocuteur</li>
+              <li>Anonymisation de certaines sources pour des raisons professionnelles</li>
+              <li>Difficulté à isoler les SDHI des autres pesticides dans l’opinion publique</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========== 11. SOURCES ========== -->
+      <section id="sources" class="section section--alt" aria-labelledby="sources-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Bibliographie</span>
+            <h2 id="sources-title">Sources</h2>
+          </header>
+
+          <div class="sources-grid">
+            <div class="source-category">
+              <h3>Publications scientifiques</h3>
+              <ul class="source-list">
+                <li>Dewailly A., Rustin P. (2018) — Tribune et travaux sur les SDHI [référence complète à compléter]</li>
+                <li>Fritsch C. et al. (2020) — Effets des SDHI sur modèles non fongiques [Source à compléter]</li>
+                <li>INSERM (2019–2023) — Expertises et synthèses sur pesticides et santé [Source à compléter]</li>
+              </ul>
+            </div>
+            <div class="source-category">
+              <h3>Rapports officiels</h3>
+              <ul class="source-list">
+                <li>ANSES (2021) — Expertise collective sur les SDHI</li>
+                <li>EFSA (2022) — Réévaluations et avis sur substances actives [Source à compléter]</li>
+                <li>Parlement européen (2021) — Rapport sur les conflits d’intérêts à l’EFSA</li>
+              </ul>
+            </div>
+            <div class="source-category">
+              <h3>Presse et tribunes</h3>
+              <ul class="source-list">
+                <li><em>Le Monde</em> (2018) — Tribune et couverture de l’alerte Dewailly / Rustin</li>
+                <li><em>Libération</em> (2019) — Suivi du débat sur le moratoire [Source à compléter]</li>
+                <li><em>Le Monde diplomatique</em> (2021) — Analyse des enjeux agrochimiques [Source à compléter]</li>
+              </ul>
+            </div>
+            <div class="source-category">
+              <h3>Ressources en ligne</h3>
+              <ul class="source-list">
+                <li><a href="https://www.anses.fr" rel="noopener noreferrer">anses.fr</a></li>
+                <li><a href="https://www.efsa.europa.eu" rel="noopener noreferrer">efsa.europa.eu</a></li>
+                <li><a href="https://www.generations-futures.fr" rel="noopener noreferrer">generations-futures.fr</a></li>
+                <li><a href="https://www.cnrs.fr" rel="noopener noreferrer">cnrs.fr</a></li>
+                <li><a href="https://www.pan-europe.info" rel="noopener noreferrer">pesticide-action-network.org (PAN Europe)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 12. ÉQUIPE ========== -->
+      <section id="equipe" class="section" aria-labelledby="equipe-title">
+        <div class="container">
+          <header class="section__header">
+            <span class="section-label">Crédits</span>
+            <h2 id="equipe-title">Équipe</h2>
+          </header>
+
+          <p><strong>Contexte&nbsp;:</strong> ESIEE Paris — Projet Controverse — 2026</p>
+
+          <h3>Membres</h3>
+          <div class="team-list">
+            <div class="team-member">Simon Ropiot</div>
+            <div class="team-member">Raphaël Quillaud</div>
+            <div class="team-member">Théophile Raphoz</div>
+            <div class="team-member">Marc-Aurélien Roulet Stephany</div>
+          </div>
+
+          <p>
+            Ce site a été conçu collectivement comme support principal d’analyse de la controverse
+            sur les pesticides SDHI. La démarche combine recherche documentaire, cartographie des
+            acteurs, enquête de terrain et mise en perspective des arguments opposés.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== 13. FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p>
+            Site réalisé dans le cadre du projet d’analyse des controverses scientifiques et
+            techniques — ESIEE Paris, 2026.
+          </p>
+        </div>
+        <nav class="site-footer__links" aria-label="Liens institutionnels">
+          <a href="https://www.controverses-esiee.fr" rel="noopener noreferrer">Cours Controverses ESIEE</a>
+          <a href="https://www.esiee.fr" rel="noopener noreferrer">ESIEE Paris</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div id="map-tooltip" class="map-tooltip" role="tooltip" hidden></div>
+
+    <button type="button" class="back-to-top ripple-host" aria-label="Retour en haut de la page">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
